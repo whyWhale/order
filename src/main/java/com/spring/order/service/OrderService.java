@@ -3,10 +3,13 @@ package com.spring.order.service;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import com.spring.order.domain.Order;
 import com.spring.order.domain.OrderItem;
 import com.spring.order.repository.OrderRepository;
 
+@Service
 public class OrderService {
 	private final VoucherService voucherService;
 	private final OrderRepository orderRepository;

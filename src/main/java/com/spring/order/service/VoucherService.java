@@ -2,8 +2,12 @@ package com.spring.order.service;
 
 import java.util.UUID;
 
-import com.spring.order.domain.Voucher.Voucher;
+import org.springframework.stereotype.Service;
 
+import com.spring.order.domain.Voucher.Voucher;
+import com.spring.order.repository.VoucherRepository;
+
+@Service
 public class VoucherService {
 	private final VoucherRepository voucherRepository;
 
