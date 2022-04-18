@@ -37,7 +37,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.spring.order.Main" level="info" additivity="false">
+    <logger name="com.spring.order.test.Main" level="info" additivity="false">
         <appender-ref ref="ROLLING_FILE"/>
     </logger>
 

@@ -1,4 +1,4 @@
-package com.spring.order.domain.enumtype;
+package com.spring.order.domain.type;
 
 public enum OrderStatus {
 	ACCEPTED,

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.spring.order.domain.enumtype.OrderStatus;
+import com.spring.order.domain.type.OrderStatus;
 import com.spring.order.domain.Voucher.Voucher;
 
 public class Order {
@@ -42,5 +42,21 @@ public class Order {
 
 	public UUID getOrderId() {
 		return orderId;
+	}
+
+	public Optional<Voucher> getVoucher() {
+		return voucher;
+	}
+
+	public OrderStatus getOrderStatus() {
+		return orderStatus;
+	}
+
+	public List<OrderItem> getOrderItemList() {
+		return orderItemList;
+	}
+
+	public UUID getCustomerId() {
+		return customerId;
 	}
 }
