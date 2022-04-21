@@ -4,4 +4,4 @@ spring:
   application:
     name: v1.0.0
   profiles:
-    active: dev
+    active: dev, secret
