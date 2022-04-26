@@ -17,7 +17,6 @@ public class PercentDiscountVoucher implements Voucher {
 	}
 
 	public long discount(long beforeDiscount) {
-		System.out.println();
 		return beforeDiscount - (percent / 100) * 100;
 	}
 }
