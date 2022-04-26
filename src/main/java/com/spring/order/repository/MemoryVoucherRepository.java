@@ -5,11 +5,10 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
+import com.spring.order.aop.TrackTime;
 import com.spring.order.domain.Voucher.Voucher;
 
 @Repository
@@ -22,6 +21,7 @@ public class MemoryVoucherRepository implements VoucherRepository {
 		return Optional.ofNullable(storage.get(voucherId));
 	}
 
+	@TrackTime
 	@Override
 	public Voucher insert(Voucher voucher) {
 		storage.put(voucher.getVoucherId(), voucher);
